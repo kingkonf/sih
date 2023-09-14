@@ -1,0 +1,51 @@
+.Cards {
+  display: flex;
+  gap: 10px;
+}
+.parentContainer{
+  width: 100%;
+}
+
+.parentContainer.Good {
+  background-color: green;
+}
+
+.parentContainer.Bad {
+  background-color: red;
+}
+
+.searchTerm{
+  padding:10px;
+  border:none;
+  margin-left:20px;
+  margin-right:30px;
+  border-radius: 20px;
+  width:200px;
+  
+}
+.searchTerm:active{
+  border:none;
+}
+
+.searchButton{
+  padding:10px;
+  width:100px;
+  border:none;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .Cards{
+    flex-direction: column;
+  }
+  .parentContainer{
+    height: 9rem;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  .Cards{
+    width: 90%;
+  }
+}
