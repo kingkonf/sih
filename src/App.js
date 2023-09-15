@@ -6,6 +6,8 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 import Weathercard from './components/weather/weathercard';
 import Temp from './components/weather/temp';
+import AboutUs from './components/aboutus/AboutUs';
+import ContactUs from './components/contactus/ContactUs';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<DefaultLayout />} />
         <Route path="/weather" element={<Temp />} />
+        <Route path="/aboutus" element={<AboutUs/>}/>
+        <Route path="/contactus" element={<ContactUs/>}/>
       </Routes>
     </Router>
   );
